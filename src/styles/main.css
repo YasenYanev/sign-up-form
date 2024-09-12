@@ -10,3 +10,20 @@
   --invalid-input-color: #ff0000;
   --valid-input-color: #00ff00;
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+body > * {
+  height: 100vh;
+  flex: 1 0;
+}
+
+.sign-up-right {
+  flex-basis: 40%;
+}
