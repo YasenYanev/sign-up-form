@@ -5,5 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
   </head>
-  <body></body>
+  <body>
+    <article class="signup-left">
+      <section class="odin-logo-section">
+        <img
+          class="logo-img"
+          src="./assets/images/odin-lined.png"
+          alt="Odin Logo"
+        />
+        <p class="odin logo text">Odin</p>
+      </section>
+      <p class="image-credits">
+        Photo by
+        <a
+          href="https://unsplash.com/@sangam_sharma?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >sangam sharma</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/a-tall-waterfall-surrounded-by-trees-in-the-mountains-_xoNbmV9_NM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </p>
+    </article>
+    <article class="sign-up-right">
+      <section class="signup-header">
+        <h1>
+          This is not a eral online service! You know you need something like
+          this in your life to help you realize your deepset dreams.<br />Sign
+          up now to get started
+        </h1>
+        <h2>You know you want to.</h2>
+      </section>
+      <section class="sign-up-from">
+        <h2>Let's do this!</h2>
+        <form action="" class="sign-up-form">
+          <label for="firstName">FIRST NAME</label>
+          <input type="text" id="firstName" required="required" />
+
+          <label for="lastName">LAST NAME</label>
+          <input type="text" id="lastName" required="required" />
+
+          <label for="email">EMAIL</label>
+          <input type="text" id="email" required="required" />
+
+          <label for="phoneNum">PHONE NUMBER</label>
+          <input
+            type="tel"
+            id="phoneNum"
+            required="required"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          />
+
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" required="required" />
+
+          <label for="confirmPassword">CONFIRM PASSWORD </label>
+          <input type="password" id="confirmPassword" required="required" />
+        </form>
+      </section>
+      <section class="submit-form">
+        <button class="create-account">Create Account</button>
+        <p class="login-text">Already have an account? <a href="">Log in</a></p>
+      </section>
+    </article>
+  </body>
 </html>

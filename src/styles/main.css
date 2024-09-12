@@ -1,1 +1,12 @@
 @import "reset";
+
+@font-face {
+  font-family: "Norse-Bold";
+  src: url(../assets/fonts/Norse-Bold.otf);
+}
+
+:root {
+  --submit-btn-color: #a1845c;
+  --invalid-input-color: #ff0000;
+  --valid-input-color: #00ff00;
+}
