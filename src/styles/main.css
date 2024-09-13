@@ -6,15 +6,19 @@
 }
 
 :root {
-  --submit-btn-color: #a1845c;
+  --submit-btn-color: #5a9168;
   --invalid-input-color: #ff0000;
   --valid-input-color: #00ff00;
 }
-
 body {
   height: 100vh;
+}
+a {
+  color: inherit;
+}
+body,
+.odin-logo-section {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -23,7 +27,41 @@ body > * {
   height: 100vh;
   flex: 1 0;
 }
+/* Left side of page */
+.sign-up-left {
+  background-image: url(../assets/images/background.jpg);
 
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.odin-logo-section {
+  position: absolute;
+  top: 13.7rem;
+  height: 9.5rem;
+  width: 100%;
+  /* padding: 1rem; */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo-img {
+  width: 6rem;
+}
+.odin-logo-text {
+  font-family: "Norse-Bold";
+  font-size: 6rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Right side of page */
 .sign-up-right {
-  flex-basis: 40%;
+  flex-basis: 30%;
 }
