@@ -31,42 +31,46 @@
       </footer>
     </article>
     <article class="sign-up-right">
-      <section class="signup-header">
+      <section class="signup-header-section">
         <h1>
-          This is not a eral online service! You know you need something like
+          This is not a real online service! You know you need something like
           this in your life to help you realize your deepset dreams.<br />Sign
           up now to get started
         </h1>
         <h2>You know you want to.</h2>
       </section>
-      <section class="sign-up-from">
+      <section class="sign-up-form-section">
         <h2>Let's do this!</h2>
         <form action="" class="sign-up-form">
-          <label for="firstName">FIRST NAME</label>
-          <input type="text" id="firstName" required="required" />
+          <div class="column left">
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" id="firstName" required="required" />
 
-          <label for="lastName">LAST NAME</label>
-          <input type="text" id="lastName" required="required" />
+            <label for="email">EMAIL</label>
+            <input type="text" id="email" required="required" />
 
-          <label for="email">EMAIL</label>
-          <input type="text" id="email" required="required" />
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" required="required" />
+          </div>
 
-          <label for="phoneNum">PHONE NUMBER</label>
-          <input
-            type="tel"
-            id="phoneNum"
-            required="required"
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-          />
+          <div class="column right">
+            <label for="lastName">LAST NAME</label>
+            <input type="text" id="lastName" required="required" />
 
-          <label for="password">PASSWORD</label>
-          <input type="password" id="password" required="required" />
+            <label for="phoneNum">PHONE NUMBER</label>
+            <input
+              type="tel"
+              id="phoneNum"
+              required="required"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            />
 
-          <label for="confirmPassword">CONFIRM PASSWORD </label>
-          <input type="password" id="confirmPassword" required="required" />
+            <label for="confirmPassword">CONFIRM PASSWORD </label>
+            <input type="password" id="confirmPassword" required="required" />
+          </div>
         </form>
       </section>
-      <section class="submit-form">
+      <section class="submit-form-section">
         <button class="create-account">Create Account</button>
         <p class="login-text">Already have an account? <a href="">Log in</a></p>
       </section>
