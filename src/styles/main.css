@@ -24,12 +24,6 @@ body {
   height: 100vh;
 }
 
-a {
-  color: inherit;
-  text-decoration: underline;
-  color: var(--submit-btn-color);
-}
-
 body > * {
   height: 100vh;
   flex: 1 0;
@@ -66,6 +60,10 @@ footer {
   width: 100%;
   text-align: center;
   padding: 1rem 0;
+}
+
+.image-credits a {
+  color: white;
 }
 
 /* Right side */
@@ -119,6 +117,7 @@ footer {
 }
 
 .column {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -140,6 +139,27 @@ input {
   font-size: 1.2rem;
 }
 
+.formatErrorMsg {
+  display: none;
+  background-color: var(--invalid-input-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem 1rem 1rem 0rem;
+  position: absolute;
+  bottom: 5rem;
+}
+.notEqualErrorMsg {
+  display: none;
+  position: absolute;
+  bottom: -0.8rem;
+  color: var(--invalid-input-color);
+}
+
+.formatErrorMsg.active,
+.notEqualErrorMsg.active {
+  display: block;
+}
+
 .wrapper-inside-submit {
   font-size: 1.2rem;
 }
@@ -152,4 +172,18 @@ input {
   padding: 1.2rem 4.2rem;
   font-weight: inherit;
   cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+input:focus {
+  border: 2px solid blue; /* Change the border color to blue when focused */
+  outline: none; /* Optional: Remove the default outline */
+}
+
+.valid-input {
+  border: 2.5px solid var(--valid-input-color);
+}
+
+.invalid-input {
+  border: 2.5px solid var(--invalid-input-color);
 }

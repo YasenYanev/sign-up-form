@@ -49,9 +49,16 @@
             <input type="text" id="firstName" required="required" />
 
             <label for="email">EMAIL</label>
-            <input type="text" id="email" required="required" />
+            <input type="email" id="email" required="required" />
 
+            <div class="formatErrorMsg">
+              Password must be at least 8 characters long and include at least
+              one uppercase letter, one lowercase letter, one number, and one
+              special character (@, $, !, %, *, ?, &).
+            </div>
             <label for="password">PASSWORD</label>
+            <div class="notEqualErrorMsg">*Passwords do not match</div>
+
             <input type="password" id="password" required="required" />
           </div>
 
