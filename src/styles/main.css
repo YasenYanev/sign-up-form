@@ -1,4 +1,4 @@
-@import "reset";
+@import "reset.css";
 
 @font-face {
   font-family: "Norse-Bold";
@@ -26,6 +26,8 @@ body {
 
 a {
   color: inherit;
+  text-decoration: underline;
+  color: var(--submit-btn-color);
 }
 
 body > * {
@@ -83,22 +85,27 @@ footer {
   flex-grow: 0;
 }
 
-.signup-header-section {
+.signup-header-section,
+.submit-form-section {
   position: relative;
 }
-.header-inside-wrapper {
+
+.wrapper-inside-header {
   position: absolute;
   left: 3rem;
   right: 8rem;
   bottom: 3rem;
   font-size: 1.6rem;
-  font-weight: 600;
   line-height: 1.1;
 }
 .header-title {
   margin-bottom: 1.5rem;
 }
-.header-subtitle {
+
+.wrapper-inside-submit {
+  position: absolute;
+  left: 3rem;
+  top: 3rem;
 }
 
 .sign-up-form {
@@ -109,7 +116,6 @@ footer {
 
 .form-title {
   font-size: 1.8rem;
-  font-weight: 600;
 }
 
 .column {
@@ -118,7 +124,9 @@ footer {
   flex: 1;
   height: 85%;
 }
-
+.wrapper-inside-header,
+.wrapper-inside-submit,
+.form-title,
 label,
 input {
   font-weight: 600;
@@ -129,5 +137,19 @@ input {
   border: 1px solid rgb(199, 198, 198);
   border-radius: 0.2rem;
   margin-bottom: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+}
+
+.wrapper-inside-submit {
+  font-size: 1.2rem;
+}
+
+.submit-form-btn {
+  background-color: var(--submit-btn-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.2rem 4.2rem;
+  font-weight: inherit;
+  cursor: pointer;
 }
