@@ -26,10 +26,6 @@ This project is a simple sign-up page for a web application, created as part of 
 
 You can view a live preview of the sign-up page here: [Live Demo](https://yasenyanev.github.io/sign-up-form/)
 
-## Screenshot
-
-![Sign Up Page Screenshot](./page-screenshot.png)
-
 ## Getting Started
 
 To get started with this project, follow these steps:
