@@ -180,10 +180,10 @@ input:focus {
   outline: none; /* Optional: Remove the default outline */
 }
 
-.valid-input {
+input.valid-input {
   border: 2.5px solid var(--valid-input-color);
 }
 
-.invalid-input {
+input.invalid-input {
   border: 2.5px solid var(--invalid-input-color);
 }
