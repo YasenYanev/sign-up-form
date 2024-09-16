@@ -65,7 +65,7 @@ class StateController {
 const controller = new StateController();
 
 inputs.forEach((input) => {
-  ["input", "focus", "blur"].forEach((event) =>
+  ["input", "blur"].forEach((event) =>
     input.addEventListener(event, (e) => controller.renderState(e)),
   );
 });
