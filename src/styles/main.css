@@ -175,6 +175,10 @@ input {
   margin-bottom: 1.5rem;
 }
 
+.login-text a {
+  color: var(--submit-btn-color);
+}
+
 input:focus {
   border: 2px solid blue; /* Change the border color to blue when focused */
   outline: none; /* Optional: Remove the default outline */
